@@ -31,6 +31,16 @@ Open the file on GitHub, click the pencil icon, edit and commit. Or drag in a re
 ### Custom domain (optional)
 Buy a domain (e.g. zaynakirlew.com) from any registrar, then add it under **Settings → Pages → Custom domain** and follow GitHub's DNS instructions.
 
-## Swapping in images
+## Adding your photo
 
-Every placeholder has a `<!-- REPLACE: ... -->` comment just above it showing the `<img>` line to use. Replace the placeholder `<div class="ph">` with that line, point it at your file, and write a short `alt` description.
+1. Save your photo as `assets/img/zayna.jpg` (a portrait crop, around 800×1000px, works best).
+2. In **index.html** and **about.html**, find the line `<div class="ph" ...>[ your photo ]</div>` and replace it with:
+   `<img src="assets/img/zayna.jpg" alt="Zayna Kirlew smiling">`
+
+## Adding more case-study images
+
+Each case study has commented-out spots (`<!-- ... -->`) where process images fit: the MedPortal site map, the Kindle audit and final screens, the Coucou logo rounds and palette, the CyberDream trim sheet and Sumo Slammers GIF, and the Bee Well final screens. Put the image in the folder named in the comment (e.g. `assets/img/coucou/`), then delete the `<!--` and `-->` around that line.
+
+## Editing text
+
+All text lives in the HTML files and can be edited directly on GitHub. Colours and fonts live at the top of `assets/css/style.css`.

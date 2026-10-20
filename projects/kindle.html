@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kindle App Redesign · Zayna Kirlew</title>
+<meta name="description" content="Redesigning the Kindle app&#x27;s filtering system so readers can browse books by tag, not just genre.">
+<meta property="og:image" content="../assets/img/covers/kindle.webp">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Zayna Kirlew, home">
+      <span class="brand-mark" aria-hidden="true">Z.</span>
+      <span class="brand-text">
+        <span class="brand-name">Zayna Kirlew</span>
+        <span class="brand-role">Product Designer</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="../index.html#work" aria-current="page">Work</a>
+      <a href="../about.html">About</a>
+      <a href="../index.html#more">More</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="cs-hero grid-bg" aria-labelledby="cs-title">
+    <svg class="sparkle" aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" style="right:6%;top:48px"><path d="M12 1C12.8 8 16 11.2 23 12C16 12.8 12.8 16 12 23C11.2 16 8 12.8 1 12C8 11.2 11.2 8 12 1Z" fill="#D9573A"/></svg>
+    <div class="wrap">
+      <a class="back" href="../index.html#work">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M11 18l-6-6 6-6"/></svg>
+        All work
+      </a>
+      <span class="label">Case study 02 · Mobile UX · 2026</span>
+      <h1 id="cs-title">Kindle App Redesign: browse books by <span class="accent">tag</span>, not just genre</h1>
+      <p class="lead">Redesigning the Kindle app's filtering system to include tags, bringing the language readers already use into the app, right where they buy.</p>
+      <dl class="facts">
+        <div class="fact"><dt>Role</dt><dd>Solo Product Designer</dd></div>
+        <div class="fact"><dt>Responsibilities</dt><dd>End-to-end design process</dd></div>
+        <div class="fact"><dt>Timeline</dt><dd>April 2026</dd></div>
+        <div class="fact"><dt>Tools</dt><dd>Figma, FigJam, Claude</dd></div>
+      </dl>
+      <figure class="cs-cover"><img src="../assets/img/covers/kindle.webp" alt="Kindle redesign summary slide with the task, challenge and solution beside three phone screens showing tappable tags" width="1920" height="1080"></figure>
+    </div>
+  </section>
+
+  <div class="wrap cs-body">
+
+    <section class="cs-section" aria-labelledby="s-overview">
+      <header><span class="num">01</span><h2 id="s-overview">Overview</h2></header>
+      <div class="content">
+        <p class="sub">How readers find their next book.</p>
+        <p>Kindle app users consistently abandon the platform's discovery tools and migrate to Reddit, TikTok and third-party apps to complete the task Amazon should own: finding a book to read next.</p>
+        <p>This recurring pattern shows the platform's filtering system is failing, especially on mobile. Recommendations are often books users have already read or that haven't come out yet.</p>
+        <p>Most importantly, it offers no way to search by trope, which has become a prominent way for modern readers to discover books.</p>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="s-problem">
+      <header><span class="num">02</span><h2 id="s-problem">Defining the problem</h2></header>
+      <div class="content">
+        <p class="sub">Understanding where the current experience fails.</p>
+        <p>I performed a design audit of the Kindle app and the Amazon Kindle web storefront to identify existing issues and inconsistencies. I found hierarchy issues that completely hide some features, and vast inconsistencies between the app and web platform.</p>
+        <!-- Add your app vs. web audit image here:
+        <figure class="cs-img"><img src="../assets/img/kindle/audit.webp" alt="Kindle app vs. web filtering menu comparison"></figure> -->
+        <div class="points">
+          <div class="point"><span class="n">01</span><div><h3>Filtering requires too many steps</h3><p>The app requires three taps and a scroll to reach subgenres; the web storefront reaches the same point in two clicks. Subgenres are hidden below the fold, and users who don't scroll don't know they exist.</p></div></div>
+          <div class="point"><span class="n">02</span><div><h3>Recommendations aren't trustworthy</h3><p>"Recommended for You" surfaces unreleased titles with no way to filter them out. Research found users describing up to 80% of suggestions as books they already own. Neither platform lets you filter out "previously downloaded," a pain point for Kindle Unlimited members.</p></div></div>
+          <div class="point"><span class="n">03</span><div><h3>The app doesn't speak the reader's language</h3><p>Readers now search with trope and mood vocabulary ("enemies to lovers," "slow burn," "dark academia") driven by BookTok and communities like r/suggestmeabook. Users leaving the app entirely during discovery is a key issue for stakeholders.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="s-competitive">
+      <header><span class="num">03</span><h2 id="s-competitive">The discovery journey</h2></header>
+      <div class="content">
+        <p class="sub">Expanding the design audit to competitors.</p>
+        <p>With a baseline in place, I used Claude to compare the Kindle app to other reading and discovery platforms.</p>
+        <div class="callout">
+          <span class="label">Competitive takeaway</span>
+          <p>The Kindle app is severely behind on discovery features and isn't capitalizing on the demand for trope-based filtering.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="s-explore">
+      <header><span class="num">04</span><h2 id="s-explore">Design exploration</h2></header>
+      <div class="content">
+        <p class="sub">Which layout and hierarchy best showcase the design features?</p>
+        <p>Based on user and market research, I identified the features that would have the greatest impact:</p>
+        <div class="points">
+          <div class="point"><span class="n">01</span><div><h3>Subgenres and tropes visible on load</h3><p>A horizontal pill row at the top of the category page, similar to the web storefront's sticky bar, resolves the fold-line problem immediately.</p></div></div>
+          <div class="point"><span class="n">02</span><div><h3>A trope/mood tag system on book pages</h3><p>Tags applied by publishers and authors make trope-based browsing native to the app.</p></div></div>
+          <div class="point"><span class="n">03</span><div><h3>A multi-select, persistent filter system</h3><p>Users need to combine criteria. Drawing on StoryGraph and Amazon's web experience, a filter drawer or sticky filter bar with multi-select addresses the single largest structural failure in the app.</p></div></div>
+          <div class="point"><span class="n">04</span><div><h3>Filter out already-read and unreleased books by default</h3><p>Purchased and pre-order-only titles are excluded from recommendation feeds by default, with an opt-in toggle.</p></div></div>
+          <div class="point"><span class="n">05</span><div><h3>Clickable tags with circular discovery</h3><p>Tags on a book page link to more books with the same trope.</p></div></div>
+        </div>
+        <h3>Design variations</h3>
+        <p>Using my initial wireframe sketches and user research, I prompted Claude to create five mid-fidelity design directions. Claude accelerates iteration, but human auditing ensures the output holds up to design-thinking principles.</p>
+        <p>For example, Claude initially proposed making tags the entry point, but that's too drastic a change for too little reward. Many users might find tags confusing or simply not want to use them.</p>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="s-walkthrough">
+      <header><span class="num">05</span><h2 id="s-walkthrough">Structured AI walkthrough</h2></header>
+      <div class="content">
+        <p class="sub">Which version, or combination, would produce the best user experience?</p>
+        <p>As a solo designer on a short turnaround, I ran five independent evaluation passes with Claude, each walking through a variation as a Kindle user trying to buy a new book. I asked it to:</p>
+        <ul>
+          <li>Identify which directions, or aspects of each, are most valuable based on usability risk and potential impact.</li>
+          <li>Consider recurring, realistic user behavior, patterns and areas of confusion across participants.</li>
+          <li>Evaluate business impact for Amazon in addition to user experience.</li>
+        </ul>
+        <div class="cards">
+          <div class="card"><h3>Tropes discovered passively</h3><p>Navigated genre, saw the trope row on load, and used it without ever opening the drawer.</p></div>
+          <div class="card"><h3>Circular discovery works unprompted</h3><p>Tapped a tag on the book detail page without guidance and bought a different book found through it.</p></div>
+          <div class="card"><h3>Result count ambiguity</h3><p>After closing the filter drawer, was unsure whether the count reflected active filters or the whole category.</p></div>
+          <div class="card"><h3>Chevron affordance missed</h3><p>Three persona simulations tapped the genre name instead of the chevron in L5, never finding the drill-down level.</p></div>
+          <div class="card"><h3>Multi-select unclear</h3><p>Tried to tap a second trope pill and wasn't sure it would behave as multi-select.</p></div>
+          <div class="card"><h3>Trope vocabulary gap</h3><p>Stalled on a panel labelled "Tropes"; the word doesn't map to how non-fiction readers think.</p></div>
+        </div>
+        <h3>Walkthrough review</h3>
+        <p>During the evaluation, I found a flaw in the L5 prototype's logic: Claude assumed users would need to tap the chevron icon specifically to open the drill-down menu. On mobile, a larger tap surface is standard practice, so I clarified that the tappable area should extend beyond the icon, which increases the success rate for that interaction.</p>
+        <div class="callout">
+          <span class="label">Key design insight</span>
+          <h3>"Tags," not "tropes"</h3>
+          <p>Trope vocabulary doesn't translate to non-fiction, and readers who aren't active on social media may not know the terms at all. "Tags" is a more neutral term that applies to every genre and is understood by most users.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="s-final">
+      <header><span class="num">06</span><h2 id="s-final">Final design</h2></header>
+      <div class="content">
+        <p class="sub">How the walkthrough shaped the design.</p>
+        <p>The walkthrough surfaced two additional features. <strong>Result counts on tag pills</strong>, showing how many books match before you tap, was the highest-rated individual feature, removing uncertainty about whether a niche filter returns useful results. And a <strong>grid/list toggle</strong> let users see tags in list view without opening each book.</p>
+        <!-- Add your final screens here:
+        <figure class="cs-img"><img src="../assets/img/kindle/final.webp" alt="Final Kindle screens"></figure> -->
+        <div class="cards">
+          <div class="decision"><span class="label">Entry point</span><h3>Genre / category first</h3><p>Genre was the most intuitive entry point, so tags live inside it rather than replacing it.</p></div>
+          <div class="decision"><span class="label">Scannability</span><h3>Tags on list view</h3><p>Users toggle between the default grid and a list view that shows each book's tags.</p></div>
+          <div class="decision"><span class="label">Filter menu</span><h3>Closer to the web experience</h3><p>Filter by release date, genre, subgenre and tag, with multi-select and result counts. Previously downloaded and purchased books are filtered out by default.</p></div>
+          <div class="decision"><span class="label">Circular discovery</span><h3>Tags open cross-genre results</h3><p>Tapping a tag opens cross-genre results, while "See all" on a shelf stays scoped to the current genre.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="s-reflection">
+      <header><span class="num">07</span><h2 id="s-reflection">Reflection</h2></header>
+      <div class="content">
+        <h3>An AI-assisted workflow</h3>
+        <p>AI is a useful tool for quick iteration and synthesizing research, but strong design-thinking fundamentals are still essential to prompt it well and audit what it produces. The L5 correction shows this: what looked like a user failing to find a feature was actually the AI defaulting to a smaller tap target than mobile conventions call for, a gap I caught in my own review, not in the walkthrough itself.</p>
+        <h3>Proposed user testing</h3>
+        <p>With more time and user access, I'd validate these findings with five real readers in a moderated, think-aloud usability study: no navigation guidance, eight minutes per direction, with direction order randomized per participant and a ten-minute break between sessions.</p>
+        <div class="pills">
+          <span class="pill">L1 Sticky filter bar</span>
+          <span class="pill">L2 Genre-first</span>
+          <span class="pill">L3 Inline list</span>
+          <span class="pill">L4 Collapsed header</span>
+          <span class="pill">L5 Panel drill-down</span>
+        </div>
+      </div>
+    </section>
+
+    <a class="next" href="coucou.html">
+      <span style="display:flex;flex-direction:column;gap:4px">
+        <span class="label">Next project</span>
+        <span class="h2">Coucou French Patisserie</span>
+      </span>
+      <span class="arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
+    </a>
+
+  </div>
+</main>
+
+<footer id="contact" class="site-footer wrap">
+  <div class="footer-top">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <span class="num">Contact</span>
+      <h2 class="h2">Let's work <span class="accent">together.</span></h2>
+    </div>
+    <div class="contact">
+      <a class="btn btn-outline" href="mailto:zaynakirlew@gmail.com">
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        Email
+      </a>
+      <a class="btn btn-outline" href="https://www.linkedin.com/in/zkirlew/" target="_blank" rel="noopener">
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span data-year>2026</span> Zayna Kirlew</span>
+    <a href="#main">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -212,7 +212,7 @@ em { font-style: italic; }
 .band p { margin: 0; font-size: 19px; line-height: 1.55; color: #EFE9D6; }
 .band p a { color: #fff; font-weight: 600; text-underline-offset: 4px; }
 .band-img { flex: 2 1 460px; min-width: 0; display: block; border-radius: 16px; overflow: hidden; }
-.band-img img, .band-img .ph { width: 100%; aspect-ratio: 959 / 298; object-fit: cover; }
+.band-img img, .band-img .ph { width: 100%; height: auto; aspect-ratio: 3 / 1; object-fit: cover; }
 .band-img .ph { background: var(--olive-dark); color: var(--on-olive); }
 .band-img img { transition: transform .5s ease; }
 .band-img:hover img { transform: scale(1.03); }
@@ -251,7 +251,7 @@ em { font-style: italic; }
 .fact { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 16px 20px; }
 .fact dt { font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--coral-text); }
 .fact dd { margin: 4px 0 0; font-weight: 600; }
-.cs-cover { width: 100%; aspect-ratio: 16 / 9; border-radius: 24px; overflow: hidden; margin-top: clamp(40px, 6vw, 64px); }
+.cs-cover { width: 100%; aspect-ratio: 16 / 9; border-radius: 24px; overflow: hidden; margin: clamp(28px, 4vw, 44px) 0 0; box-shadow: 0 18px 40px rgba(58, 51, 40, .14); }
 .cs-cover img, .cs-cover.ph { width: 100%; height: 100%; object-fit: cover; }
 
 .cs-body { display: flex; flex-direction: column; gap: clamp(56px, 7vw, 88px); padding-block: clamp(56px, 7vw, 88px); }
@@ -276,6 +276,50 @@ em { font-style: italic; }
 .next .h2 { font-size: clamp(26px, 3.4vw, 36px); }
 .next:hover { color: var(--ink); }
 .next:hover .arrow { transform: translateX(6px); }
+
+.cs-section h3 { margin: 0; font-family: var(--serif); font-weight: 600; font-size: 22px; line-height: 1.25; }
+.cs-section .sub { font-family: var(--serif); font-style: italic; font-size: 24px; line-height: 1.35; color: var(--ink); }
+.cs-img img { width: 100%; height: auto; border-radius: 18px; }
+
+.points { display: flex; flex-direction: column; gap: 0; }
+.point { display: flex; gap: 20px; padding: 22px 0; border-top: 1px solid var(--line); }
+.point:last-child { border-bottom: 1px solid var(--line); }
+.point .n { font-family: var(--serif); font-style: italic; font-size: 20px; color: var(--coral-text); flex: none; width: 32px; }
+.point div { display: flex; flex-direction: column; gap: 6px; }
+.point p { font-size: 17px; }
+
+.quote {
+  margin: 0; padding: 28px 32px; border-radius: 20px; background: var(--paper); border: 1px solid var(--line);
+  position: relative;
+}
+.quote p { font-family: var(--serif); font-style: italic; font-size: 21px; line-height: 1.5; color: var(--ink); }
+.quote::before {
+  content: "\201C"; position: absolute; top: -18px; left: 24px; font-family: var(--serif);
+  font-size: 72px; line-height: 1; color: var(--coral);
+}
+.quote cite { display: block; margin-top: 10px; font-style: normal; font-size: 13px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--coral-text); }
+
+.decision { display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 20px; background: var(--paper); border: 1px solid var(--line); }
+.decision p { font-size: 17px; }
+
+.persona { display: flex; flex-direction: column; gap: 10px; }
+.persona .avatar {
+  width: 52px; height: 52px; border-radius: 999px; display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 16px; background: var(--sand); color: var(--ink);
+}
+.persona .role { font-size: 14px; color: var(--muted); }
+.card dl { margin: 10px 0 0; display: flex; flex-direction: column; gap: 8px; font-size: 15px; }
+.card dt { font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--coral-text); }
+.card dd { margin: 0; color: var(--body); }
+
+.callout { padding: 28px 32px; border-radius: 20px; background: var(--olive); color: var(--on-olive); display: flex; flex-direction: column; gap: 10px; }
+.callout .label { color: #F8D3AE; }
+.callout p { color: #EFE9D6; font-size: 18px; }
+.callout h3 { color: #fff; }
+
+.note { font-size: 14px; line-height: 1.6; color: var(--muted); }
+.swatches { display: flex; flex-wrap: wrap; gap: 10px; }
+.swatches .pill { color: var(--ink); }
 
 /* ---------- Motion preferences ---------- */
 @media (prefers-reduced-motion: reduce) {
