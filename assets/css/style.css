@@ -368,3 +368,73 @@ em { font-style: italic; }
 .cs-section > header .label + h2 { margin-top: 2px; }
 .cs-trio { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 24px; }
 .cs-sources { margin: -40px 0 0; max-width: 900px; }
+
+/* ==========================================================
+   Theme: Olive you, navy (design 12)
+   ========================================================== */
+:root {
+  --cream: #F5F2EA;        /* page */
+  --paper: #FBF9F3;        /* cards, tag fill */
+  --grid: #E9E2D2;
+  --line: #E9E2D2;         /* borders, dividers */
+  --chip: #E9E2D2;
+  --ink: #22344F;          /* navy: headings, buttons */
+  --body: #44536A;         /* slate: body text */
+  --muted: #44536A;
+  --coral: #355F78;        /* sea blue: accent words */
+  --coral-text: #355F78;
+  --olive-text: #5B6B3A;   /* olive: labels, numbers */
+  --olive: #22344F;
+  --olive-dark: #22344F;
+  --peach: #A9C4D4;
+  --peach-light: #DCE3CC;
+  --sand: #D8C7A6;
+  --sage-light: #DCE3CC;
+  --on-olive: #F5F2EA;
+}
+.site-header { background: rgba(245,242,234,.92); }
+.brand-mark { background: var(--coral); color: var(--cream); }
+.nav a[aria-current="page"] { color: var(--olive-text); }
+.nav a:hover { color: var(--coral); }
+.kicker, .label, .num, .fact dt, .persona .role + p::before { color: var(--olive-text); }
+.btn-primary { background: var(--ink); color: var(--cream); box-shadow: none; }
+.btn-primary:hover { background: #2D4566; color: var(--cream); }
+.btn-outline:hover { background: var(--ink); color: var(--cream); }
+.photo { background: var(--cream); }
+.photo::before { background: rgba(216,199,166,.9); }
+.photo figcaption { color: var(--ink); }
+.accent { color: var(--coral); }
+.back { color: var(--coral); }
+.quote::before { color: var(--sand); }
+.result strong { color: var(--coral); }
+.cs-wide .zoom, .cs-img .zoom { color: var(--coral); }
+
+/* work section */
+.work { display: flex; flex-direction: column; gap: clamp(56px, 7vw, 80px); }
+.card-media { display: block; border-radius: 22px; overflow: hidden; box-shadow: 0 12px 32px rgba(34,52,79,.08); transition: transform .25s ease, box-shadow .25s ease; }
+.card-media img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+.featured:hover .card-media, .card-project:hover .card-media { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(34,52,79,.14); }
+.featured { display: flex; flex-direction: column; gap: 24px; }
+.featured-text, .card-project { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+.featured h3, .card-project h3 { margin: 0; font-family: var(--serif); font-weight: 600; line-height: 1.18; letter-spacing: -.01em; }
+.featured h3 { font-size: clamp(28px, 2.8vw, 36px); }
+.card-project h3 { font-size: 26px; }
+.featured h3 a, .card-project h3 a { color: var(--ink); text-decoration: none; }
+.featured h3 a:hover, .card-project h3 a:hover { color: var(--coral); }
+.featured p { margin: 0; max-width: 720px; font-size: 17px; line-height: 1.7; color: var(--body); }
+.card-project p { margin: 0; font-size: 16px; line-height: 1.65; color: var(--body); }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 64px 40px; }
+.card-project .card-media { align-self: stretch; margin-bottom: 4px; }
+.tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.tags li { font-size: 13px; font-weight: 600; padding: 6px 12px; border-radius: 999px; border: 1.5px solid var(--sand); color: var(--body); background: var(--paper); }
+.btn-case { margin-top: 6px; min-height: 48px; padding: 0 24px; font-size: 16px; }
+
+/* 3D band: light sand, stays secondary */
+.band { background-color: #E9E2D2; background-image: none; color: var(--ink); }
+.band .label { color: var(--olive-text); }
+.band .h2 { color: var(--ink); }
+.band p { color: var(--body); }
+
+/* callouts on case studies */
+.callout { background: var(--ink); }
+.callout .label { color: var(--sand); }
