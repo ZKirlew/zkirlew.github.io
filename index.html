@@ -31,7 +31,6 @@
     <nav class="nav" aria-label="Main">
       <a href="index.html#work" aria-current="page">Work</a>
       <a href="about.html">About</a>
-      <a href="index.html#more">More</a>
     </nav>
   </div>
 </header>
@@ -39,7 +38,7 @@
 <main id="main">
 
   <!-- ===== Hero ===== -->
-  <section class="hero grid-bg" aria-label="Introduction">
+  <section class="hero" aria-label="Introduction">
     <svg class="sparkle" aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" style="right:8%;top:64px"><path d="M12 1C12.8 8 16 11.2 23 12C16 12.8 12.8 16 12 23C11.2 16 8 12.8 1 12C8 11.2 11.2 8 12 1Z" fill="#D9573A"/></svg>
     <svg class="sparkle" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" style="right:12%;top:120px"><path d="M12 1C12.8 8 16 11.2 23 12C16 12.8 12.8 16 12 23C11.2 16 8 12.8 1 12C8 11.2 11.2 8 12 1Z" fill="#F4B37A"/></svg>
     <svg class="sparkle" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" style="left:4%;bottom:72px"><path d="M12 1C12.8 8 16 11.2 23 12C16 12.8 12.8 16 12 23C11.2 16 8 12.8 1 12C8 11.2 11.2 8 12 1Z" fill="#D9573A"/></svg>
@@ -58,8 +57,7 @@
       </div>
 
       <figure class="photo">
-        <!-- REPLACE: <img src="assets/img/zayna.jpg" alt="Zayna Kirlew smiling"> -->
-        <div class="ph" role="img" aria-label="Photo of Zayna (placeholder)">[ your photo ]</div>
+        <img src="assets/img/zayna.webp" alt="Zayna Kirlew smiling, with curly hair and a green top" width="800" height="1000">
         <figcaption>that's me!</figcaption>
       </figure>
     </div>
@@ -75,55 +73,67 @@
       <span class="count">5 projects</span>
     </div>
 
-    <div class="projects">
-
-      <a class="project featured" href="projects/medportal.html">
-        <div class="thumb"><img src="assets/img/covers/medportal.webp" alt="MedPortal case study cover showing the portal on laptop and phone" width="1920" height="1080"></div>
-        <div class="project-row">
-          <div class="meta">
-            <span class="label">01 · Featured · Healthcare CX</span>
-            <h3>MedPortal: a medical device portal that keeps the OR on schedule</h3>
-          </div>
-          <div class="chips">
-            <span class="chip">B2B · Web &amp; mobile</span>
-            <span class="chip">2026</span>
-            <span class="arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></span>
-          </div>
+    <div class="work-list">
+      <article class="work-row">
+        <a class="work-media" href="projects/medportal.html" tabindex="-1" aria-hidden="true">
+          <img src="assets/img/thumbs/medportal-sm.webp" alt="" width="1280" height="720">
+        </a>
+        <div class="work-text">
+          <span class="label">Featured · Healthcare CX · 2026</span>
+          <h3><a href="projects/medportal.html">MedPortal: a medical device portal that keeps the OR on schedule</a></h3>
+          <p>A high-fidelity customer portal that unifies ordering, service and asset readiness, with role-based dashboards and an AI risk score that flags at-risk devices before they affect surgery.</p>
+          <ul class="tags" aria-label="Project tags"><li>Solo Product Designer</li><li>UX Research</li><li>Service Design</li><li>Healthcare</li></ul>
+          <a class="btn btn-primary" href="projects/medportal.html">View case study <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
         </div>
-      </a>
-
-      <a class="project" href="projects/kindle.html">
-        <div class="thumb"><img src="assets/img/covers/kindle-sm.webp" alt="Kindle app redesign cover with tag-based browsing screens" width="960" height="540" loading="lazy"></div>
-        <div class="meta">
-          <span class="label">02 · Mobile UX · 2026</span>
-          <h3>Kindle App Redesign</h3>
+      </article>
+      <article class="work-row">
+        <a class="work-media" href="projects/kindle.html" tabindex="-1" aria-hidden="true">
+          <img src="assets/img/thumbs/kindle-sm.webp" alt="" width="1280" height="720" loading="lazy">
+        </a>
+        <div class="work-text">
+          <span class="label">Mobile UX · 2026</span>
+          <h3><a href="projects/kindle.html">Kindle App Redesign: browse books by tag, not just genre</a></h3>
+          <p>A redesign of the Kindle app's filtering system that brings the tags readers already use, like “enemies to lovers,” into the app, with multi-select filters and result counts on every tag.</p>
+          <ul class="tags" aria-label="Project tags"><li>Solo Product Designer</li><li>Design Audit</li><li>AI-assisted Workflow</li><li>Mobile</li></ul>
+          <a class="btn btn-primary" href="projects/kindle.html">View case study <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
         </div>
-      </a>
-
-      <a class="project" href="projects/coucou.html">
-        <div class="thumb"><img src="assets/img/covers/coucou-sm.webp" alt="Coucou patisserie branding with Shiba Inu chef logo and pastry box" width="960" height="540" loading="lazy"></div>
-        <div class="meta">
-          <span class="label">03 · Branding · 2025</span>
-          <h3>Coucou French Patisserie</h3>
+      </article>
+      <article class="work-row">
+        <a class="work-media" href="projects/coucou.html" tabindex="-1" aria-hidden="true">
+          <img src="assets/img/thumbs/coucou-sm.webp" alt="" width="1280" height="720" loading="lazy">
+        </a>
+        <div class="work-text">
+          <span class="label">Branding · 2025</span>
+          <h3><a href="projects/coucou.html">Coucou: brand identity for a French patisserie</a></h3>
+          <p>Logo, color palette, illustrated pastry icons and packaging for a French bakery, shaped by two rounds of customer feedback and tested against WCAG contrast standards.</p>
+          <ul class="tags" aria-label="Project tags"><li>Lead Designer</li><li>Branding</li><li>Logo Design</li><li>Illustration</li></ul>
+          <a class="btn btn-primary" href="projects/coucou.html">View case study <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
         </div>
-      </a>
-
-      <a class="project" href="projects/bee-well.html">
-        <div class="thumb"><img src="assets/img/covers/beewell-sm.webp" alt="Bee Well health app screens with bee mascot and honeycomb theme" width="960" height="540" loading="lazy"></div>
-        <div class="meta">
-          <span class="label">04 · Health app · UX research · 2022</span>
-          <h3>Bee Well</h3>
+      </article>
+      <article class="work-row">
+        <a class="work-media" href="projects/bee-well.html" tabindex="-1" aria-hidden="true">
+          <img src="assets/img/thumbs/beewell-sm.webp" alt="" width="1280" height="720" loading="lazy">
+        </a>
+        <div class="work-text">
+          <span class="label">Health app · 2022</span>
+          <h3><a href="projects/bee-well.html">Bee Well: gamifying healthy habits for young adults</a></h3>
+          <p>A health management app that helps college students set realistic goals, earn rewards and stay accountable with friends, grounded in user interviews and personas.</p>
+          <ul class="tags" aria-label="Project tags"><li>Lead Designer</li><li>User Research</li><li>UI Design</li><li>Team of 5</li></ul>
+          <a class="btn btn-primary" href="projects/bee-well.html">View case study <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
         </div>
-      </a>
-
-      <a class="project" href="projects/cyberdream.html">
-        <div class="thumb"><img src="assets/img/covers/cyberdream-sm.webp" alt="CyberDream VR environments floating around a person wearing a VR headset" width="960" height="540" loading="lazy"></div>
-        <div class="meta">
-          <span class="label">05 · 3D · VR · 2022</span>
-          <h3>CyberDream VR</h3>
+      </article>
+      <article class="work-row">
+        <a class="work-media" href="projects/cyberdream.html" tabindex="-1" aria-hidden="true">
+          <img src="assets/img/thumbs/cyberdream-sm.webp" alt="" width="1280" height="720" loading="lazy">
+        </a>
+        <div class="work-text">
+          <span class="label">3D · VR · 2022</span>
+          <h3><a href="projects/cyberdream.html">CyberDream: 3D environments for a VR party game</a></h3>
+          <p>Modeled and textured handcrafted-style 3D assets in Unity during a four-month internship, using trim sheets and lightmap UVs to keep the game running smoothly.</p>
+          <ul class="tags" aria-label="Project tags"><li>3D Environment Artist</li><li>Maya</li><li>Substance Painter</li><li>Unity</li></ul>
+          <a class="btn btn-primary" href="projects/cyberdream.html">View case study <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
         </div>
-      </a>
-
+      </article>
     </div>
   </section>
 
@@ -133,7 +143,7 @@
       <div class="band-text">
         <span class="label">02 · Beyond product</span>
         <h2 id="more-title" class="h2">3D <em>Design</em></h2>
-        <p>If you would like to see more of my 3D Designs <a href="https://zkirlew.artstation.com" target="_blank" rel="noopener">click here</a>.</p>
+        <p>If you'd like to see more of my 3D designs and game assets, visit my ArtStation.</p>
         <a class="btn btn-light" href="https://zkirlew.artstation.com" target="_blank" rel="noopener" style="align-self:flex-start">
           View on ArtStation
           <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>

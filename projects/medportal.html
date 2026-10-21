@@ -27,13 +27,12 @@
     <nav class="nav" aria-label="Main">
       <a href="../index.html#work" aria-current="page">Work</a>
       <a href="../about.html">About</a>
-      <a href="../index.html#more">More</a>
     </nav>
   </div>
 </header>
 
 <main id="main">
-  <section class="cs-hero grid-bg" aria-labelledby="cs-title">
+  <section class="cs-hero" aria-labelledby="cs-title">
     <svg class="sparkle" aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" style="right:6%;top:48px"><path d="M12 1C12.8 8 16 11.2 23 12C16 12.8 12.8 16 12 23C11.2 16 8 12.8 1 12C8 11.2 11.2 8 12 1Z" fill="#D9573A"/></svg>
     <div class="wrap">
       <a class="back" href="../index.html#work">
@@ -49,7 +48,7 @@
         <div class="fact"><dt>Timeline</dt><dd>May 2026</dd></div>
         <div class="fact"><dt>Tools</dt><dd>Figma, FigJam, Claude</dd></div>
       </dl>
-      <figure class="cs-cover"><img src="../assets/img/covers/medportal.webp" alt="MedPortal summary slide: challenge, opportunity and solution beside the portal on laptop and phone" width="1920" height="1080"></figure>
+      <figure class="cs-cover"><img src="../assets/img/medportal/cover.webp" alt="MedPortal title slide: a medical-device customer portal shown on a tablet and phone, tagged Responsive Web, Service Design and Design System, built with Figma, FigJam and Claude" width="2000" height="1125"></figure>
     </div>
   </section>
 
@@ -90,6 +89,13 @@
       </div>
     </section>
 
+    <section class="cs-stack" aria-labelledby="s-journeys">
+      <header class="cs-stack-head"><span class="label">Journey maps</span><h3 id="s-journeys">One bad week, from three points of view</h3><p>I mapped each persona's journey through a real failure scenario: their actions, pain points, touchpoints and emotional state at every stage, and where MedPortal steps in.</p></header>
+      <figure class="cs-wide"><a href="../assets/img/medportal/journey-john.webp" target="_blank" rel="noopener"><img src="../assets/img/medportal/journey-john.webp" alt="Journey map for John Thompson, Procurement Lead: a routine consumables reorder that becomes a delay crisis, with actions, pain points, touchpoints, emotional state and how MedPortal fixes each stage." width="2000" height="1811" loading="lazy"></a><figcaption>John Thompson · Procurement Lead <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <figure class="cs-wide"><a href="../assets/img/medportal/journey-sarah.webp" target="_blank" rel="noopener"><img src="../assets/img/medportal/journey-sarah.webp" alt="Journey map for Sarah Chen, OR Clinical Specialist: a morning readiness check that ends in a blocked OR, with actions, pain points, touchpoints, emotional state and how MedPortal fixes each stage." width="2000" height="1840" loading="lazy"></a><figcaption>Sarah Chen · OR Clinical Specialist <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <figure class="cs-wide"><a href="../assets/img/medportal/journey-david.webp" target="_blank" rel="noopener"><img src="../assets/img/medportal/journey-david.webp" alt="Journey map for David Kim, Biomedical Engineer: a preventable emergency that costs the entire week, with actions, pain points, touchpoints, emotional state and how MedPortal fixes each stage." width="2000" height="1869" loading="lazy"></a><figcaption>David Kim · Biomedical Engineer <span class="zoom">· Open full size ↗</span></figcaption></figure>
+    </section>
+
     <section class="cs-section" aria-labelledby="s-decisions">
       <header><span class="num">04</span><h2 id="s-decisions">Key design decisions</h2></header>
       <div class="content">
@@ -123,6 +129,7 @@
       <div class="content">
         <p class="sub">What gaps exist in the current market?</p>
         <p>I researched six similar platforms in the healthcare space. Each does a good job of addressing the issues a specific type of user may encounter; however, none offers a unified digital experience.</p>
+        <figure class="cs-img cs-narrow"><a href="../assets/img/medportal/competitive.webp" target="_blank" rel="noopener"><img src="../assets/img/medportal/competitive.webp" alt="Capability comparison of MedPortal against five anonymised competitors, A to E. MedPortal is the only option that covers all eight capabilities; proactive cross-team alerts, role-based clinical dashboards and the supply-to-device link are market gaps." width="517" height="695" loading="lazy"></a></figure>
         <p>No platform connects a delayed shipment to the device it serves, notifies all affected roles automatically, and surfaces that connection in a clinical-first UX.</p>
         <div class="callout">
           <span class="label">Competitive takeaway</span>
@@ -136,25 +143,36 @@
       <div class="content">
         <p class="sub">Designs built on a strong foundation.</p>
         <p>Based on the competitive research, I outlined a site map before moving on to visual design.</p>
-        <!-- Add your site map image here:
-        <figure class="cs-img"><img src="../assets/img/medportal/sitemap.webp" alt="MedPortal site map"></figure> -->
-        <div class="cards">
-          <div class="decision">
-            <span class="label">Design decision 01</span>
-            <h3>Downstream-impact routing, not status broadcasting</h3>
-            <p>Is there a case scheduled in the next 48 hours requiring this item? If yes, the OR charge nurse and the surgeon's coordinator receive a calm, specific notification automatically, 26 minutes after detection.</p>
-          </div>
-          <div class="decision">
-            <span class="label">Design decision 02</span>
-            <h3>Role-aware home screen</h3>
-            <p>During onboarding, users select their role and the system directs them to a personalized dashboard based on their needs.</p>
-          </div>
-          <div class="decision">
-            <span class="label">Design decision 03</span>
-            <h3>Proactive risk, not reactive recovery</h3>
-            <p>The goal was to make a device failure feel like a scheduled service appointment rather than a crisis.</p>
-          </div>
-        </div>
+      </div>
+    </section>
+    <figure class="cs-wide"><a href="../assets/img/medportal/sitemap.webp" target="_blank" rel="noopener"><img src="../assets/img/medportal/sitemap.webp" alt="MedPortal site map: entry and sign-in pages lead to a central dashboard that branches to the order tracker, account and settings, asset registry and support center, each with its detail pages." width="1402" height="880" loading="lazy"></a><figcaption>Site map · entry, navigation and authenticated pages <span class="zoom">· Open full size ↗</span></figcaption></figure>
+
+    <section class="cs-section" aria-labelledby="s-dd1">
+      <header><span class="label">Design decision 01</span><h2 id="s-dd1">Downstream-impact routing, not status broadcasting</h2></header>
+      <div class="content">
+        <p class="sub">Is there a case scheduled in the next 48 hours requiring this item?</p>
+        <p>If yes, the OR charge nurse and the surgeon's coordinator receive a calm, specific notification automatically, 26 minutes after detection.</p>
+      </div>
+    </section>
+    <figure class="cs-wide"><a href="../assets/img/medportal/order-detail.webp" target="_blank" rel="noopener"><img src="../assets/img/medportal/order-detail.webp" alt="Order detail for PO-4521 showing a 5-day customs delay, a live order timeline with a note that MedPortal notified the team 26 minutes after the delay was reported, and the downstream impact on the OR 3 repair." width="1575" height="1154" loading="lazy"></a><figcaption>Order detail · the delay, who was notified and when, and the OR case it affects <span class="zoom">· Open full size ↗</span></figcaption></figure>
+
+    <section class="cs-section" aria-labelledby="s-dd2">
+      <header><span class="label">Design decision 02</span><h2 id="s-dd2">Role-aware home screen</h2></header>
+      <div class="content">
+        <p>During onboarding, users select their role and the system directs them to a personalized dashboard based on their needs.</p>
+      </div>
+    </section>
+    <figure class="cs-wide"><a href="../assets/img/medportal/onboarding-role.webp" target="_blank" rel="noopener"><img src="../assets/img/medportal/onboarding-role.webp" alt="Onboarding step 2 of 3: users choose between Procurement Lead, OR Clinical Specialist and Biomedical Engineer, each listing the dashboard features they will get." width="1582" height="1140" loading="lazy"></a><figcaption>Onboarding · choosing a role <span class="zoom">· Open full size ↗</span></figcaption></figure>
+    <div class="cs-trio">
+      <figure class="cs-wide"><a href="../assets/img/medportal/dashboard-john.webp" target="_blank" rel="noopener"><img src="../assets/img/medportal/dashboard-john.webp" alt="John's procurement dashboard: a delayed-order alert, order counts, monthly spend, open orders, order status, supplier health and an AI assistant." width="1559" height="1137" loading="lazy"></a><figcaption>John · Procurement <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <figure class="cs-wide"><a href="../assets/img/medportal/dashboard-sarah.webp" target="_blank" rel="noopener"><img src="../assets/img/medportal/dashboard-sarah.webp" alt="Sarah's OR clinical dashboard: an overdue-calibration alert for OR 3, 14 of 16 devices OR-ready, and today's device status by room." width="1553" height="1141" loading="lazy"></a><figcaption>Sarah · OR Clinical <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <figure class="cs-wide"><a href="../assets/img/medportal/dashboard-david.webp" target="_blank" rel="noopener"><img src="../assets/img/medportal/dashboard-david.webp" alt="David's biomedical dashboard: 3 devices overdue for PM, a priority device queue with risk scores, a 30-day PM calendar and an AI scheduling recommendation." width="1572" height="1143" loading="lazy"></a><figcaption>David · Biomedical <span class="zoom">· Open full size ↗</span></figcaption></figure>
+    </div>
+
+    <section class="cs-section" aria-labelledby="s-dd3">
+      <header><span class="label">Design decision 03</span><h2 id="s-dd3">Proactive risk, not reactive recovery</h2></header>
+      <div class="content">
+        <p class="sub">Make a device failure feel like a scheduled service appointment, not a crisis.</p>
         <p>The AI risk score synthesizes usage frequency, repeat fault codes, warranty status, and fleet-wide model patterns into a single number per device.</p>
         <ul>
           <li>An amber indicator fires 7 days before the overdue threshold.</li>
@@ -162,34 +180,34 @@
         </ul>
       </div>
     </section>
+    <figure class="cs-wide"><a href="../assets/img/medportal/device-detail.webp" target="_blank" rel="noopener"><img src="../assets/img/medportal/device-detail.webp" alt="Device detail for the OR 3 robotic surgical system: a calibration-overdue banner, an AI risk assessment of 87 out of 100 with three risk factors, the upcoming OR schedule, related orders and a request service action." width="1584" height="1140" loading="lazy"></a><figcaption>Device detail · AI risk score, contributing factors and affected cases <span class="zoom">· Open full size ↗</span></figcaption></figure>
 
     <section class="cs-section" aria-labelledby="s-tension">
       <header><span class="num">07</span><h2 id="s-tension">Key design tension</h2></header>
       <div class="content">
         <p class="sub">Alert fatigue.</p>
         <p>A proactive system helps address potential issues early, but if alerts are too frequent, users are trained to ignore them.</p>
-        <div class="callout">
-          <span class="label">Solution</span>
-          <h3>Alerts depend on urgency level and required action</h3>
-          <p>The system evaluates how quickly a response is needed and whether action is required. An alert only goes through if it scores high on both. Users can also update their preferences at any time in their settings.</p>
-        </div>
       </div>
     </section>
+    <figure class="cs-wide"><a href="../assets/img/medportal/alert-flow.webp" target="_blank" rel="noopener"><img src="../assets/img/medportal/alert-flow.webp" alt="Alert decision flow: a detected signal is checked for urgency and whether action is required, routing it to one of four tiers: silent, ambient, action needed or critical. Critical alerts cannot fire without a pre-drafted action." width="2000" height="976" loading="lazy"></a><figcaption>Alert logic · urgency × action required decides the tier <span class="zoom">· Open full size ↗</span></figcaption></figure>
+
+    <section class="cs-section" aria-labelledby="s-solution">
+      <header><span class="label">Solution</span><h2 id="s-solution">Alerts depend on urgency and required action</h2></header>
+      <div class="content">
+        <p>The system evaluates how quickly a response is needed and whether action is required. An alert only goes through if it scores high on both. Users can also update their preferences at any time in their settings.</p>
+      </div>
+    </section>
+    <figure class="cs-wide"><a href="../assets/img/medportal/notification-settings.webp" target="_blank" rel="noopener"><img src="../assets/img/medportal/notification-settings.webp" alt="Notification preferences: four alert tiers (critical, action needed, ambient, silent), delivery methods for each tier, and adjustable alert thresholds by category." width="2000" height="927" loading="lazy"></a><figcaption>Notification preferences · users control thresholds and delivery <span class="zoom">· Open full size ↗</span></figcaption></figure>
 
     <section class="cs-section" aria-labelledby="s-outcome">
       <header><span class="num">08</span><h2 id="s-outcome">Projected outcome</h2></header>
       <div class="content">
         <p class="sub">How success is measured across all three issues.</p>
-        <p>The projected impact of personalized dashboards and a proactive system:</p>
-        <div class="results">
-          <div class="result"><strong>70%</strong><span>Projected reduction in unplanned device downtime</span></div>
-          <div class="result"><strong>~$1,400</strong><span>Projected cost of scheduled service, vs. ~$4,200 emergency visits</span></div>
-          <div class="result"><strong>&lt;2 min</strong><span>Projected order-status lookup, down from 48+ hours</span></div>
-          <div class="result"><strong>50–60%</strong><span>Projected reduction in status-check calls</span></div>
-        </div>
-        <p class="note"><strong>Sources:</strong> Figures are informed by industry benchmarks including Navigant/Fierce Healthcare's hospital supply chain cost analysis, Gartner's 2025 B2B Buying Survey, and Spryker/Statista's B2B Self-Service Portal study. Impact projections are estimates based on comparable self-service portal implementations, not measured results from this project.</p>
+        <p>The projected impact of personalized dashboards and a proactive system, for the people using the portal and for the business behind it.</p>
       </div>
     </section>
+    <figure class="cs-wide"><a href="../assets/img/medportal/impact.webp" target="_blank" rel="noopener"><img src="../assets/img/medportal/impact.webp" alt="Impact summary. Customer impact: order status in under 2 minutes, 1 login, under 30 seconds to the key task, 0 page loads to see a risk alert. Business impact: 50 to 60% fewer status calls, 70 to 80% fewer navigation contacts, 70% less unplanned downtime, and a 4.2 out of 5 CSAT target." width="2000" height="1125" loading="lazy"></a></figure>
+    <p class="note cs-sources"><strong>Sources:</strong> Figures are informed by industry benchmarks including Navigant/Fierce Healthcare's hospital supply chain cost analysis, Gartner's 2025 B2B Buying Survey, and Spryker/Statista's B2B Self-Service Portal study. Impact projections are estimates based on comparable self-service portal implementations, not measured results from this project.</p>
 
     <a class="next" href="kindle.html">
       <span style="display:flex;flex-direction:column;gap:4px">
