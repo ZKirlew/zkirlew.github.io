@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261021f">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261021h">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -61,29 +61,39 @@
         <p>As a 3D Environment Artist, I modeled and textured 3D assets for a VR party game in Unity. I collaborated with the concept artist and other environment artists to keep my assets consistent with the design guidelines, technical constraints and client expectations.</p>
       </div>
     </section>
+    <figure class="cs-wide"><a href="../assets/img/cyberdream/assets-sheet.webp" target="_blank" rel="noopener"><img src="../assets/img/cyberdream/assets-sheet.webp" alt="A collection of handcrafted-style 3D assets: two volcanoes, lava rocks and flames, vases of paper flowers, a quilted cushion, a smiling teal microwave, and cardboard cut-out hats and icons." width="1100" height="619" loading="lazy"></a><figcaption>Assets I modeled and textured for CyberDream VR <span class="zoom">· Open full size ↗</span></figcaption></figure>
 
     <section class="cs-section" aria-labelledby="s-problems">
       <header><span class="num">02</span><h2 id="s-problems">Technical challenges</h2></header>
       <div class="content">
-        <div class="decision">
-          <span class="label">Problem 01 · Texture memory</span>
-          <h3>Solution: trim sheets</h3>
-          <p>Texture memory is a common constraint in game engines like Unity and Unreal. If textures aren't managed well, visuals load slowly or slow down the whole game, resulting in a poor player experience. I used trim sheets, which combine many textures into one instead of importing multiple textures into the engine.</p>
-        </div>
-        <!-- <figure class="cs-img"><img src="../assets/img/cyberdream/trim-sheet.webp" alt="Trim sheet applied to unlit model"></figure> -->
-        <div class="decision">
-          <span class="label">Problem 02 · Baking</span>
-          <h3>Solution: a separate lightmap UV set</h3>
-          <p>To display lighting and effects properly, assets need to be "baked," but trim sheets can disrupt baking and cause textures to render incorrectly. I created two separate UV sets, one for the trim sheet and one for baking, and combined them in Unity to display both texture and lighting information correctly in-game.</p>
-        </div>
+        <p class="sub">Making assets look handmade without slowing the game down.</p>
+        <p>The microwave shows how I handled two of VR's biggest technical constraints.</p>
       </div>
     </section>
+    <div class="cs-pair">
+      <figure class="cs-wide"><a href="../assets/img/cyberdream/microwave-render.webp" target="_blank" rel="noopener"><img src="../assets/img/cyberdream/microwave-render.webp" alt="The finished teal microwave from two angles, closed and with the door open, with a pixel smiley face on the window, a 2:00 display and a keypad." width="1100" height="619" loading="lazy"></a><figcaption>Finished microwave asset <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <figure class="cs-video square"><video src="../assets/img/cyberdream/microwave-gameplay.mp4" poster="../assets/img/cyberdream/microwave-gameplay-poster.webp" width="400" height="400" muted loop playsinline controls preload="metadata" data-autoplay aria-label="Gameplay recording in a VR kitchen, with smiling microwaves on the counter as the player stirs a cauldron."></video><figcaption>The microwave in the game</figcaption></figure>
+    </div>
+    <div class="cs-split wide-media">
+      <figure class="cs-wide"><a href="../assets/img/cyberdream/microwave-trim.webp" target="_blank" rel="noopener"><img src="../assets/img/cyberdream/microwave-trim.webp" alt="The untextured microwave model beside its trim sheet: a single strip containing the body color, the gray interior, the smiley face, vents, the 2:00 display and the keypad." width="825" height="558" loading="lazy"></a><figcaption>Microwave with its trim sheet <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <div class="cs-split-text">
+        <span class="label">Problem 01 · Texture memory</span>
+        <h3>Solution: trim sheets</h3>
+        <p>Texture memory is a common constraint in game engines like Unity and Unreal. If textures aren't managed well, visuals load slowly or slow down the whole game, resulting in a poor player experience. I used trim sheets, which combine many textures into one instead of importing multiple textures into the engine.</p>
+      </div>
+    </div>
+    <div class="cs-stack">
+      <div class="cs-stack-head"><span class="label">Problem 02 · Baking</span><h3>Solution: a separate lightmap UV set</h3><p>To display lighting and effects properly, assets need to be "baked," but trim sheets can disrupt baking and cause textures to render incorrectly. I created two separate UV sets, one for the trim sheet and one for baking, and combined them in Unity to display both texture and lighting information correctly in-game.</p></div>
+      <div class="cs-pair">
+        <figure class="cs-wide"><a href="../assets/img/cyberdream/uv-trim.webp" target="_blank" rel="noopener"><img src="../assets/img/cyberdream/uv-trim.webp" alt="UV layout for the trim sheet, with overlapping shells stacked onto shared texture strips." width="482" height="489" loading="lazy"></a><figcaption>UV set 1 · trim sheet (shells overlap to share texture) <span class="zoom">· Open full size ↗</span></figcaption></figure>
+        <figure class="cs-wide"><a href="../assets/img/cyberdream/uv-lightmap.webp" target="_blank" rel="noopener"><img src="../assets/img/cyberdream/uv-lightmap.webp" alt="UV layout for lightmap baking, with every shell laid out separately with no overlaps." width="517" height="518" loading="lazy"></a><figcaption>UV set 2 · lightmap (every shell gets its own space) <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      </div>
+    </div>
 
     <section class="cs-section" aria-labelledby="s-iterations">
       <header><span class="num">03</span><h2 id="s-iterations">Iterations</h2></header>
       <div class="content">
-        <!-- Add SumoSlammers.gif here:
-        <figure class="cs-img"><img src="../assets/img/cyberdream/sumo-slammers.gif" alt="Sumo Slammers volcano level in motion"></figure> -->
+        <p class="sub">Designing the volcano for Sumo Slammers.</p>
         <div class="cards">
           <div class="decision">
             <span class="label">Feedback · Volcano silhouette</span>
@@ -98,6 +108,20 @@
         </div>
       </div>
     </section>
+    <div class="cs-dirs four">
+      <figure class="cs-wide"><a href="../assets/img/cyberdream/volcano-1.webp" target="_blank" rel="noopener"><img src="../assets/img/cyberdream/volcano-1.webp" alt="First volcano texture: a sharp, angular brown silhouette with a single lava stream and its color palette." width="889" height="719" loading="lazy"></a><figcaption>01 · First pass, a sharp silhouette <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <figure class="cs-wide"><a href="../assets/img/cyberdream/volcano-2.webp" target="_blank" rel="noopener"><img src="../assets/img/cyberdream/volcano-2.webp" alt="Second volcano: rounded edges with the shape broken into larger rock forms." width="897" height="722" loading="lazy"></a><figcaption>02 · Rounded edges <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <figure class="cs-wide"><a href="../assets/img/cyberdream/volcano-3.webp" target="_blank" rel="noopener"><img src="../assets/img/cyberdream/volcano-3.webp" alt="Third volcano: smaller rock chunks with outlined cracks and a single lava stream." width="711" height="680" loading="lazy"></a><figcaption>03 · Smaller rock chunks <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <figure class="cs-wide"><a href="../assets/img/cyberdream/volcano-final.webp" target="_blank" rel="noopener"><img src="../assets/img/cyberdream/volcano-final.webp" alt="Final volcano: dark gray rock with branching lava that follows the curves of the mountain, and its palette." width="696" height="686" loading="lazy"></a><figcaption>04 · Final, dark gray with a dynamic flow <span class="zoom">· Open full size ↗</span></figcaption></figure>
+    </div>
+    <div class="cs-split">
+      <figure class="cs-video square"><video src="../assets/img/cyberdream/sumo-slammers.mp4" poster="../assets/img/cyberdream/sumo-slammers-poster.webp" width="554" height="554" muted loop playsinline controls preload="metadata" data-autoplay aria-label="Gameplay recording of Sumo Slammers: players toss balls on a round arena with the final gray volcano and flowing lava in the background."></video><figcaption>Sumo Slammers in-game</figcaption></figure>
+      <div class="cs-split-text">
+        <span class="label">In-game</span>
+        <h3>The final volcano in Sumo Slammers</h3>
+        <p>In the finished level, the dark gray volcano stands out against the warm sky and orange ground, so players can read the scene at a glance while the lava adds movement in the background.</p>
+      </div>
+    </div>
 
     <section class="cs-section" aria-labelledby="s-takeaways">
       <header><span class="num">04</span><h2 id="s-takeaways">Challenges &amp; takeaways</h2></header>
@@ -147,6 +171,6 @@
   </div>
 </footer>
 
-<script src="../assets/js/main.js?v=20261021f"></script>
+<script src="../assets/js/main.js?v=20261021h"></script>
 </body>
 </html>

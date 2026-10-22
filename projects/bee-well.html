@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261021f">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261021h">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -115,6 +115,8 @@
         <p>We then mapped a user flow in Miro to analyze how people would move through the product, considering multiple scenarios and the pages needed to avoid "dead ends" where users' needs went unmet.</p>
       </div>
     </section>
+    <figure class="cs-wide"><a href="../assets/img/beewell/brainstorm.webp" target="_blank" rel="noopener"><img src="../assets/img/beewell/brainstorm.webp" alt="Miro board from the Disney Creative Thinking exercise, with sticky notes grouped into problems (such as forgetting insulin or lacking healthy habits), reasons (such as limited time, cost and motivation) and solutions (such as reminders, goal setting, cheap recipes and incentives that make health fun)." width="1430" height="699" loading="lazy"></a><figcaption>Disney Creative Thinking exercise · problems, reasons and solutions <span class="zoom">· Open full size ↗</span></figcaption></figure>
+    <figure class="cs-wide"><a href="../assets/img/beewell/affinity.webp" target="_blank" rel="noopener"><img src="../assets/img/beewell/affinity.webp" alt="Affinity diagram grouping the sticky notes into themes: memory, education, resource management, finances and health conditions, with ideas like points for completing tasks and a mascot that grows as your health score increases." width="1287" height="776" loading="lazy"></a><figcaption>Affinity diagram · memory, education, resource management, finances and health conditions <span class="zoom">· Open full size ↗</span></figcaption></figure>
 
     <section class="cs-section" aria-labelledby="s-design">
       <header><span class="num">05</span><h2 id="s-design">Design &amp; feedback</h2></header>
@@ -124,20 +126,64 @@
         <p>We had added the points system to encourage users to complete tasks, but hadn't considered how honeycombs actually benefit them. To give them a reason to care, we added an in-app Store where users could customize their bee by buying accessories.</p>
       </div>
     </section>
+    <div class="cs-stack">
+      <div class="cs-stack-head"><h3>Mid-fidelity prototype</h3><p>Grayscale screens for onboarding, the welcome survey, articles, goals and the bee's inventory let us test structure and flow before adding color.</p></div>
+      <figure class="cs-wide"><a href="../assets/img/beewell/mid-launch.webp" target="_blank" rel="noopener"><img src="../assets/img/beewell/mid-launch.webp" alt="Mid-fidelity app launch, login and sign-up screens with the bee mascot and a honeycomb pattern." width="1178" height="604" loading="lazy"></a><figcaption>Launch, login and sign up <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <figure class="cs-wide"><a href="../assets/img/beewell/mid-survey.webp" target="_blank" rel="noopener"><img src="../assets/img/beewell/mid-survey.webp" alt="Mid-fidelity welcome survey, four screens asking what users want to do, what has kept them from their goals, why they downloaded the app and how often they want reminders." width="1178" height="604" loading="lazy"></a><figcaption>Welcome survey <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <figure class="cs-wide"><a href="../assets/img/beewell/mid-goals.webp" target="_blank" rel="noopener"><img src="../assets/img/beewell/mid-goals.webp" alt="Mid-fidelity goal pages showing daily goals with progress bars, long-term goals, and a new goal form with frequency, repeat days, time of day and reminders." width="1178" height="604" loading="lazy"></a><figcaption>Goal tracking <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <figure class="cs-wide"><a href="../assets/img/beewell/mid-info.webp" target="_blank" rel="noopener"><img src="../assets/img/beewell/mid-info.webp" alt="Mid-fidelity information page with articles, a congratulations pop-up awarding 5 honeycombs for reading an article, and the settings page." width="1178" height="604" loading="lazy"></a><figcaption>Articles, honeycomb reward and settings <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <div class="cs-split wide-media">
+        <figure class="cs-wide"><a href="../assets/img/beewell/mid-store.webp" target="_blank" rel="noopener"><img src="../assets/img/beewell/mid-store.webp" alt="Mid-fidelity inventory and store screens where users spend honeycombs on accessories such as hats, sunglasses and gems for their bee." width="677" height="604" loading="lazy"></a><figcaption>Inventory and store, added after feedback <span class="zoom">· Open full size ↗</span></figcaption></figure>
+        <div class="cs-split-text">
+          <span class="label">Iteration</span>
+          <h3>Giving honeycombs a purpose</h3>
+          <p>Feedback questioned why users should care about earning honeycombs. The Store and inventory let users spend them dressing up their bee, turning points into a reward.</p>
+        </div>
+      </div>
+    </div>
 
     <section class="cs-section" aria-labelledby="s-final">
       <header><span class="num">06</span><h2 id="s-final">Final design</h2></header>
       <div class="content">
-        <!-- <figure class="cs-img"><img src="../assets/img/beewell/final.webp" alt="Bee Well final screens"></figure> -->
-        <div class="cards">
-          <div class="decision"><span class="label">Welcome survey</span><p><strong>Feedback:</strong> Respondents had a range of pain points (stress, time management, physical health) and wanted personalized goal tracking.</p><p><strong>Solution:</strong> An onboarding survey focused on each user's goals and challenges, generating tips and articles tailored to them.</p></div>
-          <div class="decision"><span class="label">Suggested articles</span><p><strong>Feedback:</strong> Users knew what hadn't worked before, but some didn't know how to succeed, struggling to start and stay consistent.</p><p><strong>Solution:</strong> Articles and tips that educate users on their interests and the best ways to reach their goals.</p></div>
-          <div class="decision"><span class="label">Honeycombs</span><p><strong>Feedback:</strong> Lack of motivation was a main barrier, especially for long-term goals.</p><p><strong>Solution:</strong> Gamification through a points system, earned for meeting goals and for activities like reading articles.</p></div>
-          <div class="decision"><span class="label">Goal tracking</span><p><strong>Feedback:</strong> College students needed a routine adaptable enough to keep for at least a semester.</p><p><strong>Solution:</strong> Habits form through repetition, so users set realistic goals, customizing when and how often they act and when they get reminders.</p></div>
-          <div class="decision"><span class="label">Hive</span><p><strong>Feedback:</strong> Users needed accountability and wanted a community with similar goals.</p><p><strong>Solution:</strong> Add friends, join competitions, or simply have a companion while working toward goals.</p></div>
-        </div>
+        <p class="sub">Every feature traces back to what we heard.</p>
+        <p>The high-fidelity design brings in a teal, honey and orange palette with honeycomb motifs, and an illustrated bee whose mood reflects each user's progress.</p>
       </div>
     </section>
+    <div class="cs-stack">
+      <div class="cs-stack-head"><span class="label">Welcome survey</span><h3>Personalized from the first screen</h3><p><strong>Feedback:</strong> Respondents had a range of pain points (stress, time management, physical health) and wanted personalized goal tracking.</p><p><strong>Solution:</strong> An onboarding survey focused on each user's goals and challenges, generating tips and articles tailored to them.</p></div>
+      <figure class="cs-wide"><a href="../assets/img/beewell/survey.webp" target="_blank" rel="noopener"><img src="../assets/img/beewell/survey.webp" alt="Final welcome survey, four teal screens over a honeycomb pattern asking what users want to do, what has kept them from their goals, why they downloaded the app and how often they would like to bee notified." width="1920" height="1080" loading="lazy"></a><figcaption>Welcome survey <span class="zoom">· Open full size ↗</span></figcaption></figure>
+    </div>
+    <div class="cs-split wide-media">
+      <figure class="cs-wide"><a href="../assets/img/beewell/articles.webp" target="_blank" rel="noopener"><img src="../assets/img/beewell/articles.webp" alt="Final article screens: an Explore feed with Health, Nutrition and Exercise tabs and a search bar, and an opened article that can be starred." width="677" height="604" loading="lazy"></a><figcaption>Suggested articles <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <div class="cs-split-text">
+        <span class="label">Suggested articles</span>
+        <h3>Learning how to succeed</h3>
+        <p><strong>Feedback:</strong> Users knew what hadn't worked before, but some didn't know how to succeed, struggling to start and stay consistent.</p>
+        <p><strong>Solution:</strong> Articles and tips that educate users on their interests and the best ways to reach their goals.</p>
+      </div>
+    </div>
+    <div class="cs-stack">
+      <div class="cs-stack-head"><span class="label">Honeycombs</span><h3>Motivation you can see</h3><p><strong>Feedback:</strong> Lack of motivation was a main barrier, especially for long-term goals.</p><p><strong>Solution:</strong> Gamification through a points system, earned for meeting goals and for activities like reading articles. The home screen shows the bee leveling up alongside goals met today and this month.</p></div>
+      <div class="cs-phones">
+        <figure class="cs-wide"><a href="../assets/img/beewell/congrats.webp" target="_blank" rel="noopener"><img src="../assets/img/beewell/congrats.webp" alt="Pop-up congratulating the user for earning 5 honeycombs for reading an article." width="390" height="849" loading="lazy"></a><figcaption>Earning honeycombs <span class="zoom">· Open full size ↗</span></figcaption></figure>
+        <figure class="cs-wide"><a href="../assets/img/beewell/home.webp" target="_blank" rel="noopener"><img src="../assets/img/beewell/home.webp" alt="Home screen showing the user at level 2 with happiness and stamina bars, a skateboarding bee, 75% of goals met today, goals met this month and weekly progress." width="390" height="844" loading="lazy"></a><figcaption>Home · level and progress <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="cs-stack">
+      <div class="cs-stack-head"><span class="label">Goal tracking</span><h3>Routines that bend, not break</h3><p><strong>Feedback:</strong> College students needed a routine adaptable enough to keep for at least a semester.</p><p><strong>Solution:</strong> Habits form through repetition, so users set realistic goals, customizing when and how often they act and when they get reminders.</p></div>
+      <div class="cs-phones">
+        <figure class="cs-wide"><a href="../assets/img/beewell/goals.webp" target="_blank" rel="noopener"><img src="../assets/img/beewell/goals.webp" alt="Daily goals list with progress bars for Study and Yoga and checkable goals like Eat a Healthy Dinner and Go to bed at 11pm." width="390" height="844" loading="lazy"></a><figcaption>Daily goals <span class="zoom">· Open full size ↗</span></figcaption></figure>
+        <figure class="cs-wide"><a href="../assets/img/beewell/new-goal.webp" target="_blank" rel="noopener"><img src="../assets/img/beewell/new-goal.webp" alt="Create New Goal form for Go For a Walk: once daily, Monday to Friday, in the evening, with a 7:00 PM reminder." width="390" height="844" loading="lazy"></a><figcaption>Creating a goal <span class="zoom">· Open full size ↗</span></figcaption></figure>
+        <figure class="cs-wide"><a href="../assets/img/beewell/share-goals.webp" target="_blank" rel="noopener"><img src="../assets/img/beewell/share-goals.webp" alt="Pop-up asking which goals to share, with Yoga and Study selected." width="390" height="844" loading="lazy"></a><figcaption>Sharing goals <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="cs-stack">
+      <div class="cs-stack-head"><span class="label">Hive</span><h3>Accountability with friends</h3><p><strong>Feedback:</strong> Users needed accountability and wanted a community with similar goals.</p><p><strong>Solution:</strong> Add friends, join competitions, or simply have a companion while working toward goals.</p></div>
+      <div class="cs-phones">
+        <figure class="cs-wide"><a href="../assets/img/beewell/hive.webp" target="_blank" rel="noopener"><img src="../assets/img/beewell/hive.webp" alt="My Hive screen listing friends with their levels and View Friend buttons, plus an Add Friend button." width="390" height="844" loading="lazy"></a><figcaption>My Hive <span class="zoom">· Open full size ↗</span></figcaption></figure>
+        <figure class="cs-wide"><a href="../assets/img/beewell/friend.webp" target="_blank" rel="noopener"><img src="../assets/img/beewell/friend.webp" alt="A friend's profile at level 5 with a bee in love with his progress, 5 of 8 goals met today and a 5-day streak." width="390" height="844" loading="lazy"></a><figcaption>A friend's progress <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      </div>
+    </div>
 
     <section class="cs-section" aria-labelledby="s-reflection">
       <header><span class="num">07</span><h2 id="s-reflection">Reflections</h2></header>
@@ -189,6 +235,6 @@
   </div>
 </footer>
 
-<script src="../assets/js/main.js?v=20261021f"></script>
+<script src="../assets/js/main.js?v=20261021h"></script>
 </body>
 </html>
