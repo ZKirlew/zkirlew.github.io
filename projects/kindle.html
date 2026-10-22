@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261021b">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261021e">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -68,22 +68,49 @@
       <header><span class="num">02</span><h2 id="s-problem">Defining the problem</h2></header>
       <div class="content">
         <p class="sub">Understanding where the current experience fails.</p>
-        <p>I performed a design audit of the Kindle app and the Amazon Kindle web storefront to identify existing issues and inconsistencies. I found hierarchy issues that completely hide some features, and vast inconsistencies between the app and web platform.</p>
-        <!-- Add your app vs. web audit image here:
-        <figure class="cs-img"><img src="../assets/img/kindle/audit.webp" alt="Kindle app vs. web filtering menu comparison"></figure> -->
+        <p>I performed a design audit of the Kindle app and the Amazon Kindle web storefront to identify existing issues and inconsistencies, starting with how each one gets a reader to a subgenre.</p>
+      </div>
+    </section>
+    <div class="cs-stack">
+      <div class="cs-stack-head"><h3>Kindle app vs. Kindle web storefront</h3><p>The app takes three taps and a scroll to reach subgenres, and the category menu is only reachable at the top of the page. The web storefront gets there in two clicks.</p></div>
+      <figure class="cs-wide"><a href="../assets/img/kindle/flow-app.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/flow-app.webp" alt="Kindle app user flow from the home screen to a subcategory: tap Explore, tap a genre, then scroll about 15 seconds past the fold to reach the subgenre list, with the category menu only reachable at the top of the page." width="1743" height="966" loading="lazy"></a><figcaption>Kindle app · navigating to a subcategory <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <figure class="cs-wide"><a href="../assets/img/kindle/flow-web.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/flow-web.webp" alt="Kindle web storefront user flow: click a genre, then a subgenre, with subgenres visible in a bar at the top of the category page." width="2000" height="483" loading="lazy"></a><figcaption>Kindle web storefront · the same task in two clicks <span class="zoom">· Open full size ↗</span></figcaption></figure>
+    </div>
+    <div class="cs-stack">
+      <div class="cs-stack-head"><span class="label">The filtering menu</span><h3>Five options in the app, dozens on the web</h3><p>The app's filter is a short dropdown limited to membership, sort order and ratings. The web storefront's "All filters" panel offers formats, release dates, series and dozens of subgenres, none of which reach the app.</p></div>
+      <div class="cs-compare">
+        <figure class="cs-wide"><a href="../assets/img/kindle/filter-current.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/filter-current.webp" alt="The current Kindle app filter menu: a small dropdown with only Kindle Unlimited, Prime Reading, eBooks with Audible, sort by popularity and customer reviews." width="653" height="1400" loading="lazy"></a><figcaption>Current Kindle app filter menu <span class="zoom">· Open full size ↗</span></figcaption></figure>
+        <figure class="cs-wide"><a href="../assets/img/kindle/filter-web.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/filter-web.webp" alt="The Amazon web storefront All filters panel: memberships, formats, reviews, new releases, series options and a long list of romance subgenres such as Small Town Romance, Enemies to Lovers and Fake Dating, all as selectable pills." width="1593" height="1234" loading="lazy"></a><figcaption>Kindle web storefront · All filters panel <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      </div>
+    </div>
+
+    <section class="cs-section" aria-labelledby="s-pain">
+      <header><span class="label">Pain points</span><h2 id="s-pain">What the audit found</h2></header>
+      <div class="content">
+        <p>Hierarchy issues completely hide some features, and the app and web platform are vastly inconsistent.</p>
         <div class="points">
           <div class="point"><span class="n">01</span><div><h3>Filtering requires too many steps</h3><p>The app requires three taps and a scroll to reach subgenres; the web storefront reaches the same point in two clicks. Subgenres are hidden below the fold, and users who don't scroll don't know they exist.</p></div></div>
           <div class="point"><span class="n">02</span><div><h3>Recommendations aren't trustworthy</h3><p>"Recommended for You" surfaces unreleased titles with no way to filter them out. Research found users describing up to 80% of suggestions as books they already own. Neither platform lets you filter out "previously downloaded," a pain point for Kindle Unlimited members.</p></div></div>
-          <div class="point"><span class="n">03</span><div><h3>The app doesn't speak the reader's language</h3><p>Readers now search with trope and mood vocabulary ("enemies to lovers," "slow burn," "dark academia") driven by BookTok and communities like r/suggestmeabook. Users leaving the app entirely during discovery is a key issue for stakeholders.</p></div></div>
+          <div class="point"><span class="n">03</span><div><h3>The app doesn't speak the reader's language</h3><p>Readers now search with trope and mood vocabulary ("enemies to lovers," "slow burn," "dark academia") driven by BookTok and communities like r/suggestmeabook.</p></div></div>
         </div>
       </div>
     </section>
+    <div class="cs-stack">
+      <div class="cs-stack-head"><h3>User journey map</h3><p>The journey holds steady until filtering, where readers hit dead ends and leave for Reddit, TikTok or StoryGraph. Users leaving the app entirely during discovery is a key issue for stakeholders.</p></div>
+      <figure class="cs-wide"><a href="../assets/img/kindle/journey.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/journey.webp" alt="User journey map for Kindle app book discovery across six stages, from trigger to return and purchase, with actions, touchpoints, pain points and opportunities. The emotional curve dips from hopeful to frustrated at filtering and defeated when readers search elsewhere, then recovers to satisfied when they return to buy." width="1720" height="1266" loading="lazy"></a><figcaption>User journey map · Kindle app book discovery <span class="zoom">· Open full size ↗</span></figcaption></figure>
+    </div>
 
     <section class="cs-section" aria-labelledby="s-competitive">
       <header><span class="num">03</span><h2 id="s-competitive">The discovery journey</h2></header>
       <div class="content">
         <p class="sub">Expanding the design audit to competitors.</p>
-        <p>With a baseline in place, I used Claude to compare the Kindle app to other reading and discovery platforms.</p>
+        <p>With a baseline in place, I used Claude to compare the Kindle app to other reading and discovery platforms across eight core discovery features.</p>
+      </div>
+    </section>
+    <figure class="cs-wide"><a href="../assets/img/kindle/competitive.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/competitive.webp" alt="Competitive audit table comparing the Kindle app, Amazon web, StoryGraph, Goodreads, Libby and Wattpad on eight discovery features. The Kindle app is marked absent on all eight, while StoryGraph supports every one." width="1400" height="1094" loading="lazy"></a><figcaption>Competitive audit · book discovery and filtering <span class="zoom">· Open full size ↗</span></figcaption></figure>
+    <section class="cs-section" aria-label="Competitive takeaway">
+      <header></header>
+      <div class="content">
         <div class="callout">
           <span class="label">Competitive takeaway</span>
           <p>The Kindle app is severely behind on discovery features and isn't capitalizing on the demand for trope-based filtering.</p>
@@ -100,14 +127,35 @@
           <div class="point"><span class="n">01</span><div><h3>Subgenres and tropes visible on load</h3><p>A horizontal pill row at the top of the category page, similar to the web storefront's sticky bar, resolves the fold-line problem immediately.</p></div></div>
           <div class="point"><span class="n">02</span><div><h3>A trope/mood tag system on book pages</h3><p>Tags applied by publishers and authors make trope-based browsing native to the app.</p></div></div>
           <div class="point"><span class="n">03</span><div><h3>A multi-select, persistent filter system</h3><p>Users need to combine criteria. Drawing on StoryGraph and Amazon's web experience, a filter drawer or sticky filter bar with multi-select addresses the single largest structural failure in the app.</p></div></div>
-          <div class="point"><span class="n">04</span><div><h3>Filter out already-read and unreleased books by default</h3><p>Purchased and pre-order-only titles are excluded from recommendation feeds by default, with an opt-in toggle.</p></div></div>
+          <div class="point"><span class="n">04</span><div><h3>Filter out already-read and unreleased books by default</h3><p>Purchased and pre-order-only titles are excluded from recommendation feeds by default, with an opt-in toggle. This single change would materially improve "Recommended for You."</p></div></div>
           <div class="point"><span class="n">05</span><div><h3>Clickable tags with circular discovery</h3><p>Tags on a book page link to more books with the same trope.</p></div></div>
         </div>
-        <h3>Design variations</h3>
-        <p>Using my initial wireframe sketches and user research, I prompted Claude to create five mid-fidelity design directions. Claude accelerates iteration, but human auditing ensures the output holds up to design-thinking principles.</p>
-        <p>For example, Claude initially proposed making tags the entry point, but that's too drastic a change for too little reward. Many users might find tags confusing or simply not want to use them.</p>
       </div>
     </section>
+    <div class="cs-stack">
+      <div class="cs-stack-head"><h3>Initial sketches</h3><p>I started on paper, sketching a filter bar on the category page, a full filter panel and a subgenre drill-down.</p></div>
+      <figure class="cs-wide"><a href="../assets/img/kindle/sketches.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/sketches.webp" alt="Hand-drawn wireframes of the Kindle mobile filter proposal: a category page with filter and category pills, an All filters panel, a browse menu and a subgenre list." width="2000" height="1533" loading="lazy"></a><figcaption>Paper wireframes · Kindle mobile filter proposal <span class="zoom">· Open full size ↗</span></figcaption></figure>
+    </div>
+
+    <div class="cs-stack">
+      <div class="cs-stack-head"><span class="label">Design variations</span><h3>Five mid-fidelity directions</h3><p>Using my sketches and research, I prompted Claude to create five mid-fidelity directions. Claude accelerates iteration, but human auditing ensures the output holds up to design-thinking principles.</p></div>
+      <div class="cs-dirs">
+        <figure class="cs-wide"><a href="../assets/img/kindle/l1-sticky.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/l1-sticky.webp" alt="Direction L1, sticky filter bar: subgenre pills sit directly below the genre title on the category page, with a filter drawer and a book detail page with tappable tropes." width="917" height="907" loading="lazy"></a><figcaption>L1 · Sticky filter bar <span class="zoom">· Open full size ↗</span></figcaption></figure>
+        <figure class="cs-wide"><a href="../assets/img/kindle/l2-tag-first.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/l2-tag-first.webp" alt="Direction L2, tag-first browse: trope tags are the primary entry point above the genre grid on the discover screen." width="930" height="908" loading="lazy"></a><figcaption>L2 · Tag-first browse <span class="zoom">· Open full size ↗</span></figcaption></figure>
+        <figure class="cs-wide"><a href="../assets/img/kindle/l3-inline.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/l3-inline.webp" alt="Direction L3, inline list with tags: results switch to a list view where each book shows its trope tags." width="918" height="967" loading="lazy"></a><figcaption>L3 · Inline list + tags <span class="zoom">· Open full size ↗</span></figcaption></figure>
+        <figure class="cs-wide"><a href="../assets/img/kindle/l4-collapsed.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/l4-collapsed.webp" alt="Direction L4, collapsed smart header: the search bar and subgenre pills collapse into a compact header as the user scrolls." width="928" height="905" loading="lazy"></a><figcaption>L4 · Collapsed smart header <span class="zoom">· Open full size ↗</span></figcaption></figure>
+        <figure class="cs-wide"><a href="../assets/img/kindle/l5-panel.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/l5-panel.webp" alt="Direction L5, hamburger panel with trope drill-down: the existing genre menu gains a second panel of subgenres and tropes with result counts." width="816" height="939" loading="lazy"></a><figcaption>L5 · Panel drill-down <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="cs-split">
+      <figure class="cs-wide"><a href="../assets/img/kindle/l2-revised.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/l2-revised.webp" alt="L2 revised, genre first and tropes second: the unchanged genre menu, then a Romance page with subgenre pills and a new tropes and mood row visible on load, then the same page with tropes selected." width="773" height="807" loading="lazy"></a><figcaption>L2 revised · genre first, tropes second <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <div class="cs-split-text">
+        <span class="label">Auditing the AI</span>
+        <h3>Genre first, tropes second</h3>
+        <p>Claude initially proposed making tags the entry point, but that's too drastic a change for too little reward. Many users might find tags confusing or simply not want to use them.</p>
+        <p>I revised L2 so genre stays the entry point, exactly as in the current app, and tropes appear as a second row on the category page, visible without opening a drawer.</p>
+      </div>
+    </div>
 
     <section class="cs-section" aria-labelledby="s-walkthrough">
       <header><span class="num">05</span><h2 id="s-walkthrough">Structured AI walkthrough</h2></header>
@@ -119,6 +167,7 @@
           <li>Consider recurring, realistic user behavior, patterns and areas of confusion across participants.</li>
           <li>Evaluate business impact for Amazon in addition to user experience.</li>
         </ul>
+        <h3>Walkthrough findings</h3>
         <div class="cards">
           <div class="card"><h3>Tropes discovered passively</h3><p>Navigated genre, saw the trope row on load, and used it without ever opening the drawer.</p></div>
           <div class="card"><h3>Circular discovery works unprompted</h3><p>Tapped a tag on the book detail page without guidance and bought a different book found through it.</p></div>
@@ -128,11 +177,26 @@
           <div class="card"><h3>Trope vocabulary gap</h3><p>Stalled on a panel labelled "Tropes"; the word doesn't map to how non-fiction readers think.</p></div>
         </div>
         <h3>Walkthrough review</h3>
-        <p>During the evaluation, I found a flaw in the L5 prototype's logic: Claude assumed users would need to tap the chevron icon specifically to open the drill-down menu. On mobile, a larger tap surface is standard practice, so I clarified that the tappable area should extend beyond the icon, which increases the success rate for that interaction.</p>
+        <p>During the evaluation, I found a flaw in the L5 prototype's logic: Claude assumed users would need to tap the chevron icon specifically to open the drill-down menu. On mobile, a larger tap surface is standard practice, so I clarified that the tappable area should extend beyond the icon, which increased the success rate for that interaction.</p>
+      </div>
+    </section>
+    <div class="cs-stack">
+      <figure class="cs-wide"><a href="../assets/img/kindle/direction-comparison.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/direction-comparison.webp" alt="Direction comparison table from the AI-simulated walkthrough. L2 genre-first is the winning direction with 5 of 5 tasks completed and low risk to casual users. L3, L1, L4 and L5 each completed 4 of 5; L5 improved after the tap-target correction." width="2000" height="1125" loading="lazy"></a><figcaption>Direction comparison · AI-simulated walkthrough <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <figure class="cs-wide"><a href="../assets/img/kindle/business-impact.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/business-impact.webp" alt="Projected business impact charts comparing the five directions: L2 leads in-app purchase conversion and has the lowest session abandonment, while L5 is weakest on both. A callout cites public signals of off-platform discovery, such as BookTok and r/suggestmeabook." width="2000" height="1125" loading="lazy"></a><figcaption>Projected business impact · directions compared against each other, not against internal Amazon data <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <figure class="cs-wide"><a href="../assets/img/kindle/recommendation.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/recommendation.webp" alt="Design recommendation: use L2 as the structural foundation, with targeted features from L3 and L5, listed as seven steps, plus a stakeholder insight about low regression risk for casual browsers." width="2000" height="1125" loading="lazy"></a><figcaption>Design recommendation · L2 as the foundation, plus targeted features from L3 and L5 <span class="zoom">· Open full size ↗</span></figcaption></figure>
+    </div>
+    <section class="cs-section" aria-label="Key design insight">
+      <header></header>
+      <div class="content">
         <div class="callout">
           <span class="label">Key design insight</span>
           <h3>"Tags," not "tropes"</h3>
           <p>Trope vocabulary doesn't translate to non-fiction, and readers who aren't active on social media may not know the terms at all. "Tags" is a more neutral term that applies to every genre and is understood by most users.</p>
+        </div>
+        <h3>Two additional features</h3>
+        <div class="points">
+          <div class="point"><span class="n">01</span><div><h3>Result counts on tag pills</h3><p>Each tag shows how many books match before the user taps it. This was the highest-rated individual feature, removing uncertainty about whether a niche filter returns useful results.</p></div></div>
+          <div class="point"><span class="n">02</span><div><h3>A grid/list toggle on results pages</h3><p>The Kindle app already has a grid/list toggle, but users liked seeing tags in list view without having to open each book.</p></div></div>
         </div>
       </div>
     </section>
@@ -140,18 +204,52 @@
     <section class="cs-section" aria-labelledby="s-final">
       <header><span class="num">06</span><h2 id="s-final">Final design</h2></header>
       <div class="content">
-        <p class="sub">How the walkthrough shaped the design.</p>
-        <p>The walkthrough surfaced two additional features. <strong>Result counts on tag pills</strong>, showing how many books match before you tap, was the highest-rated individual feature, removing uncertainty about whether a niche filter returns useful results. And a <strong>grid/list toggle</strong> let users see tags in list view without opening each book.</p>
-        <!-- Add your final screens here:
-        <figure class="cs-img"><img src="../assets/img/kindle/final.webp" alt="Final Kindle screens"></figure> -->
-        <div class="cards">
-          <div class="decision"><span class="label">Entry point</span><h3>Genre / category first</h3><p>Genre was the most intuitive entry point, so tags live inside it rather than replacing it.</p></div>
-          <div class="decision"><span class="label">Scannability</span><h3>Tags on list view</h3><p>Users toggle between the default grid and a list view that shows each book's tags.</p></div>
-          <div class="decision"><span class="label">Filter menu</span><h3>Closer to the web experience</h3><p>Filter by release date, genre, subgenre and tag, with multi-select and result counts. Previously downloaded and purchased books are filtered out by default.</p></div>
-          <div class="decision"><span class="label">Circular discovery</span><h3>Tags open cross-genre results</h3><p>Tapping a tag opens cross-genre results, while "See all" on a shelf stays scoped to the current genre.</p></div>
-        </div>
+        <p class="sub">How did the walkthrough influence the design?</p>
+        <p>The most impactful features were keeping genre as the entry point, adding a result count to each tag, and displaying tags in list view.</p>
       </div>
     </section>
+    <div class="cs-stack">
+      <div class="cs-stack-head"><span class="label">Entry point</span><h3>Genre / category view</h3><p>In the current app, subgenres are hidden below the fold. In the redesign, subgenres and tags are visible as soon as the category page loads.</p></div>
+      <figure class="cs-wide"><a href="../assets/img/kindle/genre-entry.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/genre-entry.webp" alt="Side-by-side comparison of the Romance category page. In the current Kindle app, subgenres are hidden below the fold. In the redesign proposal, subgenre pills and tags are visible on load." width="1920" height="1080" loading="lazy"></a><figcaption>Kindle app vs. redesign proposal · Romance category page <span class="zoom">· Open full size ↗</span></figcaption></figure>
+    </div>
+    <div class="cs-split">
+      <figure class="cs-wide"><a href="../assets/img/kindle/list-view.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/list-view.webp" alt="Redesigned Romance results in list view, filtered by Enemies to Lovers, with each book showing its price, rating, Kindle Unlimited badge and tags." width="653" height="1400" loading="lazy"></a><figcaption>Tags on list view <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <div class="cs-split-text">
+        <span class="label">Scannability</span>
+        <h3>Tags on list view</h3>
+        <ul>
+          <li>Users can toggle between the default grid view and a list view.</li>
+          <li>Tags are displayed in list view, so readers can scan for what they want without opening each book.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cs-split wide-media">
+      <figure class="cs-wide"><a href="../assets/img/kindle/filter-menu.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/filter-menu.webp" alt="Side-by-side comparison of the filter menu. The current Kindle app shows a small dropdown with five options. The redesign proposal is a full All filters panel with subscription, format, reviews, new releases, series, category, sub-category and a new tags section with result counts and multi-select." width="1138" height="1080" loading="lazy"></a><figcaption>Kindle app vs. redesign proposal · filter menu <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <div class="cs-split-text">
+        <span class="label">Filter menu</span>
+        <h3>Closer to the web experience</h3>
+        <ul>
+          <li>Users can filter by release date, genre, subgenre and tag.</li>
+          <li>Previously downloaded and purchased books are filtered out by default.</li>
+          <li>Each tag shows its result count.</li>
+          <li>Users can select multiple tags.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cs-split">
+      <figure class="cs-video">
+        <video src="../assets/img/kindle/circular-discovery.mp4" poster="../assets/img/kindle/circular-discovery-poster.webp" width="434" height="800" muted loop playsinline controls preload="metadata" data-autoplay aria-label="Prototype recording: on a book detail page, tapping the Enemies to Lovers tag opens cross-genre results for that tag."></video>
+        <figcaption>Prototype · tapping a tag on a book page</figcaption>
+      </figure>
+      <div class="cs-split-text">
+        <span class="label">Circular discovery</span>
+        <h3>Every tag leads to the next book</h3>
+        <ul>
+          <li>Tapping a tag opens cross-genre results.</li>
+          <li>Tapping "See all" on a shelf stays scoped to the current genre.</li>
+        </ul>
+      </div>
+    </div>
 
     <section class="cs-section" aria-labelledby="s-reflection">
       <header><span class="num">07</span><h2 id="s-reflection">Reflection</h2></header>
@@ -204,6 +302,6 @@
   </div>
 </footer>
 
-<script src="../assets/js/main.js?v=20261021b"></script>
+<script src="../assets/js/main.js?v=20261021e"></script>
 </body>
 </html>

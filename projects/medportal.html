@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261021b">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261021e">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -100,27 +100,26 @@
       <header><span class="num">04</span><h2 id="s-decisions">Key design decisions</h2></header>
       <div class="content">
         <p class="sub">Data-driven design choices.</p>
+        <p>Each decision traces back to something I heard from users. Every piece of feedback below directly shaped the design decision below it.</p>
 
-        <blockquote class="quote"><p>I only find out about delays when I call the rep. By then, it's already a problem for the OR schedule.</p><cite>User feedback</cite></blockquote>
-        <div class="decision">
-          <span class="label">Design decision 01</span>
-          <h3>A proactive notification badge on the delay event, not just the current status</h3>
-          <p>Rather than showing only where the order is now, the timeline shows exactly when MedPortal notified the user and who else was looped in automatically. The delay badge reads: "You were notified 26 minutes after this was reported." That's the thing the old system never did.</p>
-        </div>
-
-        <blockquote class="quote"><p>The robotic system threw an error code during a procedure. We had no idea the calibration was 17 days overdue.</p><cite>User feedback</cite></blockquote>
-        <div class="decision">
-          <span class="label">Design decision 02</span>
-          <h3>An AI risk score surfaced before the device is touched, not after it fails</h3>
-          <p>The Device Detail page shows an AI-calculated risk score (87/100 = HIGH), three contributing factors, and a predicted failure window. Sarah sees this the moment she opens the device record, before the 10:30am case starts. The score is tied to real usage data, not a generic warning.</p>
-        </div>
-
-        <blockquote class="quote"><p>I have to go to three different sections just to see which devices are overdue and when I can schedule a PM.</p><cite>User feedback</cite></blockquote>
-        <div class="decision">
-          <span class="label">Design decision 03</span>
-          <h3>Task-based dashboards, not org-chart navigation</h3>
-          <p>Each role gets a dashboard oriented around their primary job. David's Maintenance Hub combines the at-risk device queue with a 30-day Gantt PM calendar and an AI scheduling recommendation in a single view. No tab-switching, no hunting across sections built for a different team's workflow.</p>
-        </div>
+        <article class="fb-pair" aria-label="Feedback 01 and design decision 01">
+          <div class="fb-num" aria-hidden="true">01</div>
+          <blockquote class="fb-quote"><span class="label">User feedback 01</span><p>"I only find out about delays when I call the rep. By then, it's already a problem for the OR schedule."</p><cite>Procurement Lead</cite></blockquote>
+          <div class="fb-link"><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M6 13l6 6 6-6"/></svg> Led to</span></div>
+          <div class="fb-decision"><span class="label">Design decision 01</span><h3>A proactive notification badge on the delay event, not just the current status</h3><p>Rather than showing only where the order is now, the timeline shows exactly when MedPortal notified the user and who else was looped in automatically. The delay badge reads: "You were notified 26 minutes after this was reported." That's the thing the old system never did.</p></div>
+        </article>
+        <article class="fb-pair" aria-label="Feedback 02 and design decision 02">
+          <div class="fb-num" aria-hidden="true">02</div>
+          <blockquote class="fb-quote"><span class="label">User feedback 02</span><p>"The robotic system threw an error code during a procedure. We had no idea the calibration was 17 days overdue."</p><cite>OR Clinical Specialist</cite></blockquote>
+          <div class="fb-link"><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M6 13l6 6 6-6"/></svg> Led to</span></div>
+          <div class="fb-decision"><span class="label">Design decision 02</span><h3>An AI risk score surfaced before the device is touched, not after it fails</h3><p>The Device Detail page shows an AI-calculated risk score (87/100 = HIGH), three contributing factors, and a predicted failure window. Sarah sees this the moment she opens the device record, before the 10:30am case starts. The score is tied to real usage data, not a generic warning.</p></div>
+        </article>
+        <article class="fb-pair" aria-label="Feedback 03 and design decision 03">
+          <div class="fb-num" aria-hidden="true">03</div>
+          <blockquote class="fb-quote"><span class="label">User feedback 03</span><p>"I have to go to three different sections just to see which devices are overdue and when I can schedule a PM."</p><cite>Biomedical Engineer</cite></blockquote>
+          <div class="fb-link"><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M6 13l6 6 6-6"/></svg> Led to</span></div>
+          <div class="fb-decision"><span class="label">Design decision 03</span><h3>Task-based dashboards, not org-chart navigation</h3><p>Each role gets a dashboard oriented around their primary job. David's Maintenance Hub combines the at-risk device queue with a 30-day Gantt PM calendar and an AI scheduling recommendation in a single view. No tab-switching, no hunting across sections built for a different team's workflow.</p></div>
+        </article>
       </div>
     </section>
 
@@ -243,6 +242,6 @@
   </div>
 </footer>
 
-<script src="../assets/js/main.js?v=20261021b"></script>
+<script src="../assets/js/main.js?v=20261021e"></script>
 </body>
 </html>
