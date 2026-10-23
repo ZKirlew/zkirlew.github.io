@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261021i">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261021j">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -134,7 +134,7 @@
     </section>
     <div class="cs-stack">
       <div class="cs-stack-head"><h3>Initial sketches</h3><p>I started on paper, sketching a filter bar on the category page, a full filter panel and a subgenre drill-down.</p></div>
-      <figure class="cs-wide"><a href="../assets/img/kindle/sketches.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/sketches.webp" alt="Hand-drawn wireframes of the Kindle mobile filter proposal: a category page with filter and category pills, an All filters panel, a browse menu and a subgenre list." width="2000" height="1533" loading="lazy"></a><figcaption>Paper wireframes · Kindle mobile filter proposal <span class="zoom">· Open full size ↗</span></figcaption></figure>
+      <figure class="cs-wide"><a href="../assets/img/kindle/sketches-v2.webp" target="_blank" rel="noopener"><img src="../assets/img/kindle/sketches-v2.webp" alt="Hand-drawn wireframes for the Kindle mobile filter proposal: a category page with a filter button, category tabs and filter pills above Books for You; an All filters panel with membership, format, review, new release, category and subgenre sections; a Browse Kindle menu that drills into a subgenre list; and category pages with filters and list-view results." width="2000" height="1566" loading="lazy"></a><figcaption>Paper wireframes · Kindle mobile filter proposal <span class="zoom">· Open full size ↗</span></figcaption></figure>
     </div>
 
     <div class="cs-stack">
@@ -251,20 +251,23 @@
       </div>
     </div>
 
-    <section class="cs-section" aria-labelledby="s-reflection">
-      <header><span class="num">07</span><h2 id="s-reflection">Reflection</h2></header>
+    <section class="cs-section" aria-labelledby="s-conclusion">
+      <header><span class="num">07</span><h2 id="s-conclusion">Conclusion</h2></header>
       <div class="content">
-        <h3>An AI-assisted workflow</h3>
-        <p>AI is a useful tool for quick iteration and synthesizing research, but strong design-thinking fundamentals are still essential to prompt it well and audit what it produces. The L5 correction shows this: what looked like a user failing to find a feature was actually the AI defaulting to a smaller tap target than mobile conventions call for, a gap I caught in my own review, not in the walkthrough itself.</p>
-        <h3>Proposed user testing</h3>
-        <p>With more time and user access, I'd validate these findings with five real readers in a moderated, think-aloud usability study: no navigation guidance, eight minutes per direction, with direction order randomized per participant and a ten-minute break between sessions.</p>
-        <div class="pills">
-          <span class="pill">L1 Sticky filter bar</span>
-          <span class="pill">L2 Genre-first</span>
-          <span class="pill">L3 Inline list</span>
-          <span class="pill">L4 Collapsed header</span>
-          <span class="pill">L5 Panel drill-down</span>
+        <p class="sub">Keeping discovery, and the purchase, inside the app.</p>
+        <p>Readers already know how they want to find books: by genre first, then by the tropes and moods they talk about online. Bringing that language into the Kindle app with tags, result counts and a fuller filter menu gives them a reason to stay instead of leaving for Reddit, TikTok or StoryGraph.</p>
+        <div class="stats">
+          <div class="stat"><span class="stat-num">On load</span><span class="stat-label">subgenres and tags are visible on the genre page, with no extra tap or scroll below the fold</span></div>
+          <div class="stat"><span class="stat-num">80%</span><span class="stat-label">projected in-app purchase conversion for the genre-first direction, the highest of the five</span></div>
+          <div class="stat"><span class="stat-num">10%</span><span class="stat-label">projected session abandonment, versus 50% for the weakest direction</span></div>
         </div>
+        <h3>Projected outcomes</h3>
+        <div class="points">
+          <div class="point"><span class="n">01</span><div><h3>Readers stay in the app to discover</h3><p>Tags and circular discovery cover the trope-based browsing readers currently do off-platform, so Amazon keeps the discovery moment, not just the final purchase.</p></div></div>
+          <div class="point"><span class="n">02</span><div><h3>More trustworthy recommendations</h3><p>Filtering out owned, previously downloaded and unreleased titles by default removes the noise that makes "Recommended for You" easy to ignore, especially for Kindle Unlimited members.</p></div></div>
+          <div class="point"><span class="n">03</span><div><h3>Low risk for casual readers</h3><p>Genre stays the entry point and the menu is unchanged, so readers who never use tags lose nothing, while frequent readers gain faster, more confident filtering.</p></div></div>
+        </div>
+        <p class="note">Conversion and abandonment figures are projections that compare the five directions against each other. They are not measured Kindle data.</p>
       </div>
     </section>
 
@@ -302,6 +305,6 @@
   </div>
 </footer>
 
-<script src="../assets/js/main.js?v=20261021i"></script>
+<script src="../assets/js/main.js?v=20261021j"></script>
 </body>
 </html>
